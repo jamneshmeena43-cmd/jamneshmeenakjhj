@@ -1,0 +1,60 @@
+/* ================= VARIABLES & RESET ================= */
+:root {
+  --primary: #0A58CA; /* Trust Blue */
+  --secondary: #198754; /* Action Green */
+  --bg-color: #f4f7f6;
+  --white: #ffffff;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --border: #dee2e6;
+  --radius: 8px;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+body { background: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ================= TYPOGRAPHY & BUTTONS ================= */
+.btn { display: inline-block; padding: 12px 24px; border-radius: var(--radius); font-weight: bold; text-align: center; cursor: pointer; border: none; transition: 0.3s; }
+.btn-primary { background: var(--primary); color: var(--white); }
+.btn-primary:hover { background: #084298; }
+.btn-success { background: var(--secondary); color: var(--white); }
+.btn-success:hover { background: #146c43; }
+.btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+
+/* ================= LAYOUT ================= */
+header { background: var(--white); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+nav ul { display: flex; gap: 20px; }
+nav a:hover { color: var(--primary); }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+/* ================= HERO SECTION ================= */
+.hero { text-align: center; padding: 60px 20px; background: linear-gradient(rgba(10,88,202,0.1), rgba(10,88,202,0.05)); }
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--primary); }
+.hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 20px; }
+.hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* ================= FORMS & CARDS ================= */
+.card { background: var(--white); padding: 25px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
+.form-control { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 1rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+/* ================= DASHBOARD ================= */
+.dashboard-grid { display: grid; grid-template-columns: 250px 1fr; gap: 20px; }
+.sidebar { background: var(--white); padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); height: fit-content;}
+.sidebar ul li { margin-bottom: 15px; }
+.sidebar ul li a { display: block; padding: 10px; border-radius: var(--radius); background: var(--bg-color); }
+.sidebar ul li a:hover { background: var(--primary); color: var(--white); }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  nav { display: none; /* Add hamburger JS logic for full implementation */ }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
+}

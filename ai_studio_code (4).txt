@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yourdomain.com/index.html</loc></url>
+  <url><loc>https://yourdomain.com/order.html</loc></url>
+  <url><loc>https://yourdomain.com/track-order.html</loc></url>
+</urlset>

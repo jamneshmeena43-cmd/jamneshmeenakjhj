@@ -1,0 +1,21 @@
+/nayan-glass-service
+├── index.html
+├── order.html
+├── track-order.html
+├── shopkeeper-login.html
+├── shopkeeper-register.html
+├── shopkeeper-dashboard.html
+├── admin-dashboard.html
+├── 404.html
+├── terms.html
+├── privacy.html
+├── manifest.json
+├── sw.js
+├── sitemap.xml
+├── robots.txt
+├── netlify.toml
+├── README.md
+├── css/
+│   └── style.css
+└── js/
+    └── app.js

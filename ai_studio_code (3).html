@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - Nayan Glass</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }
+    th { background: var(--bg-color); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NGS Admin Panel</div>
+    <a href="index.html" class="btn btn-outline">Logout</a>
+  </header>
+
+  <div class="container dashboard-grid">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" style="background:var(--primary); color:white;">Dashboard Overview</a></li>
+        <li><a href="#">Manage Orders</a></li>
+        <li><a href="#">Shopkeepers</a></li>
+        <li><a href="#">System Rates</a></li>
+      </ul>
+    </div>
+    
+    <div class="main-content">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Total Orders</h3>
+          <h1 style="color:var(--primary);">124</h1>
+        </div>
+        <div class="card">
+          <h3>Platform Earnings (5%)</h3>
+          <h1 style="color:var(--secondary);">₹12,450</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Recent Orders</h2>
+        <div style="overflow-x:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Glass Type</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="orderTableBody">
+              <!-- Auto populated via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

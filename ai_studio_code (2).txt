@@ -1,0 +1,21 @@
+{
+  "name": "Nayan Glass Service",
+  "short_name": "Nayan Glass",
+  "description": "Order Custom Glass From Nearby Shops",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A58CA",
+  "icons":[
+    {
+      "src": "https://via.placeholder.com/192/0A58CA/FFFFFF?text=NGS",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512/0A58CA/FFFFFF?text=NGS",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
